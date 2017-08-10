@@ -37,6 +37,13 @@ app.get('/',(req, res) => {
     })
 });
 
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        title: 'Projects',
+
+    })
+});
+
 app.get('/about',(req, res) => {
     res.render('help.hbs', {
         title: 'Some page',
